@@ -34,7 +34,7 @@ case $1 in
     
     all_in)
         echo "all servers are in rotaion"
-        cp -rp ${destination}/ssl.conf_${today} ${directory}/ssl.conf 
+        cp -rp ${destination}/ssl.conf_${today} ${directory}/ssl.conf
         ;;
     
     *)
