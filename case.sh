@@ -5,7 +5,7 @@ directory="/root/myscripts"
 destination="/root/myscripts/serverrotationfiles"
 
 # Function to display help message
-if [ -f ssl.conf_${today} ]; then
+if [ ! -f ssl.conf_${today} ]; then
 cp -rp ${directory}/ssl.conf ${destination}/ssl.conf_${today}
     echo "taken master copy"
 else
