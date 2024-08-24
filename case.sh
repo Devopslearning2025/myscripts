@@ -39,7 +39,7 @@ case $1 in
     
     *)
         echo "Invalid option: $1"
-        echo "Usage: $0 {server1|server2|all_in}
+        echo "Usage: $0 {server1|server2|all_in}"
         exit 1
         ;;
 esac
