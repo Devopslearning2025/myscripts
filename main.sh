@@ -34,9 +34,9 @@ case $1 in
     
     all_in)
         if [ -f "${destination}/ssl.conf_${today}" ]; then
-            echo "No file found with today's date."
-        else
             echo "file is there"
+        else
+            echo "No file found with today's date."
         fi
 
         #cp -rp ${destination}/ssl.conf_$today ${directory}/ssl.conf
