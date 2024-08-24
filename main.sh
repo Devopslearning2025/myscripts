@@ -33,7 +33,7 @@ case $1 in
         ;;
     
     all_in)
-        if [ ! -f "${destination}/ssl.conf_${today}" ]; then
+        if [ "${destination}/ssl.conf_${today}" ]; then
             echo "No file found with today's date."
         else
             echo "file is there"
