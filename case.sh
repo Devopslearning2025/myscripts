@@ -14,7 +14,7 @@ fi
 
 # Check if any arguments were passed
 if [ $# -eq 0 ]; then
-    echo "No arguments provided."
+    echo "Usage: $0 {server1|server2|all_in}"
     exit 1
 fi
 
