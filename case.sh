@@ -13,7 +13,7 @@ else
 fi
 
 # Check if any arguments were passed
-if [ "$#" -eq 0 ]; then
+if [ "$#" -ne 1 ]; then
     echo "Usage: $0 {server1|server2|all_in}"
     exit 1
 fi
@@ -22,14 +22,14 @@ fi
 case $1 in
     server1)
         # Get today's date in YYYY-MM-DD format
-         sed -i '/edppvlpxya01:2033/s/^/# /' ${directory}/ssl.conf
-         echo "server1 taken out"
+        sed -i '/edppvlpxya01:2033/s/^/# /' ${directory}/ssl.conf
+        echo "server1 taken out"
         ;;
     
     server2)
         # Search for files modified in the last 7 days
-         sed -i '/edppvlpxya02:2033/s/^/# /' ${directory}/ssl.conf
-         echo "server2 taken out"
+        sed -i '/edppvlpxya02:2033/s/^/# /' ${directory}/ssl.conf
+        echo "server2 taken out"
         ;;
     
     all_in)
